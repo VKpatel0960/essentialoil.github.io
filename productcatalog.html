@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --primary-color: #ffffff;
+            --secondary-color: #0f0e0e;
+            --hover-color: #007BFF;
+            --border-color: #ddd;
+            --spacing: 20px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+        }
+
+        header {
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            text-align: center;
+            padding: var(--spacing);
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 0.5em;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline-block;
+            margin-right: 10px;
+            position: relative;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px;
+            display: block;
+        }
+
+        nav ul ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #555;
+            border-radius: 0 0 5px 5px;
+        }
+
+        nav ul li:hover>ul {
+            display: inherit;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        header nav ul li {
+            margin: 0 var(--spacing);
+        }
+
+        
+    </style>
+
+
+    <title>Essential Oil Catalog</title>
+</head>
+
+<body>
+    <header>
+
+
+        <h1>productcatalog</h1>
+</header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="productcatalog.html">Product Catalog</a></li>
+                <li><a href="#">Essential oil blends</a></li>
+                <li><a href="aromatherapytips.html">Aromatherapy Tips</a></li>
+                <li><a href="contactus.html">Contact Us and privacy policy</a></li>
+
+
+
+            </ul>
+        </nav>
+    
+    <main>
+        <section class="product-grid">
+            <div class="product-card">
+                <img src="path/to/product1.jpg" alt="Product 1">
+                <h2>Product 1</h2><br><br>
+                <p>Description of Product 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><br><br>
+                <p class="price">$19.99</p><br><br>
+                <button class="add-to-cart">Add to Cart</button><br><br>
+            </div><br><br>
+            <div class="product-card">
+                <img src="path/to/product2.jpg" alt="Product 2">
+                <h2>Product 2</h2><br><br>
+                <p>Description of Product 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><br><br>
+                <p class="price">$24.99</p><br><br>
+                <button class="add-to-cart">Add to Cart</button><br><br>
+            </div>
+            <!-- Add more product entries as needed -->
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="#">Facebook</a></li><br><br>
+            <li><a href="#">Twitter</a></li><br><br>
+            <li><a href="#">Instagram</a></li><br><br>
+        </ul>
+    </footer>
+</body>
+
+</html>

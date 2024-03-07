@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Contact Us & Privacy Policy</title>
+
+    <style> body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1em;
+    }
+    nav {
+    background-color: #444;
+    color: #fff;
+    padding: 0.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    display: block;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #555;
+    border-radius: 0 0 5px 5px;
+}
+
+nav ul li:hover > ul {
+    display: inherit;
+}
+    
+    main {
+        padding: 20px;
+    }
+    
+    section {
+        margin-bottom: 40px;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    label {
+        margin-top: 10px;
+    }
+    
+    input, textarea {
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+    
+    button {
+        background-color: #007BFF;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #0056b3;
+    }
+    
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1em;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Contact Us & Privacy Policy</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="productcatalog.html">Product Catalog</a></li>
+            <li><a href="#">Essential oil blends</a></li>
+            <li><a href="aromatherapytips.html">Aromatherapy Tips</a></li>
+            <li><a href="contactus.html">Contact Us and privacy policy</a></li>
+            
+
+
+        </ul>
+    </nav>
+
+    <main>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Have questions or need assistance? Reach out to us!</p>
+            <form action="submit_contact_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section id="privacy-policy">
+            <h2>Privacy Policy</h2>
+            <p>Your privacy is important to us. Read our privacy policy below:</p>
+            <!-- Add your privacy policy content here -->
+        </section>
+    </main>
+
+    
+
+    <footer>
+        <p>&copy; 2024 Essential Oils Emporium. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
