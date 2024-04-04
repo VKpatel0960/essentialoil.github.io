@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+
         :root {
             --primary-color: #ffffff;
             --secondary-color: #0f0e0e;
@@ -78,6 +79,58 @@
             margin: 0 var(--spacing);
         }
 
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 250fr));
+            grid-gap: var(--spacing);
+            padding: var(--spacing);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product-card {
+            background-color: #fff;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: var(--spacing);
+        }
+
+        .product-card:hover {
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-card img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto;
+            margin-bottom: var(--spacing);
+        }
+
+        .product-card h2 {
+            margin: 0;
+            margin-bottom: var(--spacing);
+        }
+
+        .product-card p {
+            margin: 0;
+            margin-bottom: var(--spacing);
+            color: #666;
+        }
+
+        .product-card .price {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin: 0;
+            margin-bottom: var(--spacing);
+        }
+
+        .product-card .add-to-cart {
+            background-color: var(--hover-color);
+
+        }
         
     </style>
 
@@ -90,29 +143,32 @@
 
 
         <h1>productcatalog</h1>
-</header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="productcatalog.html">Product Catalog</a></li>
-                <li><a href="#">Essential oil blends</a></li>
-                <li><a href="aromatherapytips.html">Aromatherapy Tips</a></li>
-                <li><a href="contactus.html">Contact Us and privacy policy</a></li>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="productcatalog.html">Product Catalog</a></li>
+            <li><a href="essentialoilblend.html">Essential oil blends</a></li>
+            <li><a href="aromatherapytips.html">Aromatherapy Tips</a></li>
+            <li><a href="contactus.html">Contact Us and privacy policy</a></li>
+            <li><a href="cart.html">cart</a></li>
 
 
 
-            </ul>
-        </nav>
-    
+
+        </ul>
+    </nav>
+
     <main>
+
         <section class="product-grid">
             <div class="product-card">
-                <img src="path/to/product1.jpg" alt="Product 1">
-                <h2>Product 1</h2><br><br>
-                <p>Description of Product 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><br><br>
-                <p class="price">$19.99</p><br><br>
-                <button class="add-to-cart">Add to Cart</button><br><br>
-            </div><br><br>
+                <img src="path/to/product2.jpg" alt="Product 2">
+                <h2>Product 2</h2><br><br>
+                <p>Description of Product 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><br><br>
+                <p class="price">$24.99</p><br><br>
+                <button class="add-to-cart" onclick="cart.html">Add to Cart</button><br><br>
+            </div>
             <div class="product-card">
                 <img src="path/to/product2.jpg" alt="Product 2">
                 <h2>Product 2</h2><br><br>
@@ -120,7 +176,49 @@
                 <p class="price">$24.99</p><br><br>
                 <button class="add-to-cart">Add to Cart</button><br><br>
             </div>
-            <!-- Add more product entries as needed -->
+            <div class="product-card">
+
+                <img src="path/to/product2.jpg" alt="Product 2">
+                <h2>Product 2</h2><br><br>
+                <p>Description of Product 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><br><br>
+                <p class="price">$24.99</p><br><br>
+                <button class="add-to-cart">Add to Cart</button><br><br>
+            </div>
+            <div class="product-card">
+                <img src="path/to/product2.jpg" alt="Product 2">
+                <h2>Product 2</h2><br><br>
+                <p>Description of Product 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><br><br>
+                <p class="price">$24.99</p><br><br>
+                <button class="add-to-cart">Add to Cart</button><br><br>
+            </div>
+            <div class="product-card">
+                <img src="path/to/product2.jpg" alt="Product 2">
+                <h2>Product 2</h2><br><br>
+                <p>Description of Product 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><br><br>
+                <p class="price">$24.99</p><br><br>
+                <button class="add-to-cart">Add to Cart</button><br><br>
+            </div>
+            <div class="product-card">
+                <img src="path/to/product2.jpg" alt="Product 2">
+                <h2>Product 2</h2><br><br>
+                <p>Description of Product 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><br><br>
+                <p class="price">$24.99</p><br><br>
+                <button class="add-to-cart">Add to Cart</button><br><br>
+            </div>
+            <div class="product-card">
+                <img src="path/to/product2.jpg" alt="Product 2">
+                <h2>Product 2</h2><br><br>
+                <p>Description of Product 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><br><br>
+                <p class="price">$24.99</p><br><br>
+                <button class="add-to-cart">Add to Cart</button><br><br>
+            </div>
+            <div class="product-card">
+                <img src="path/to/product2.jpg" alt="Product 2">
+                <h2>Product 2</h2><br><br>
+                <p>Description of Product 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><br><br>
+                <p class="price">$24.99</p><br><br>
+                <button class="add-to-cart">Add to Cart</button><br><br>
+            </div>
         </section>
     </main>
     <footer>
